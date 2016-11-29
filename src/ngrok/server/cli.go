@@ -28,7 +28,7 @@ func parseArgs() *Options {
 	remotePort := flag.String("remotePort", ":0", "The remote port which you expect to use in tcp proto.")
 	flag.Parse()
 
-	return &Options{
+	return &Options {
 		httpAddr:   *httpAddr,
 		httpsAddr:  *httpsAddr,
 		tunnelAddr: *tunnelAddr,
@@ -37,6 +37,6 @@ func parseArgs() *Options {
 		tlsKey:     *tlsKey,
 		logto:      *logto,
 		loglevel:   *loglevel,
-		remotePort:   *remotePort
+		remotePort:   *remotePort,
 	}
 }
